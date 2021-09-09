@@ -59,9 +59,10 @@ module Wice
       end
     end
 
-    initializer 'wice_grid_railtie.configure_rails_assets_precompilation' do |app|
-      app.config.assets.precompile << 'icons/grid/*'
-    end
+    # Make it work with Webpacker
+    # initializer 'wice_grid_railtie.configure_rails_assets_precompilation' do |app|
+    #   app.config.assets.precompile << 'icons/grid/*'
+    # end
   end
 
 
